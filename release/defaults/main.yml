@@ -1,0 +1,14 @@
+---
+# defaults file for release
+#repolist: 'https://github.com/sureshreddyp/{{ item }}'
+#with_items:
+repolist:
+   - demomvn 
+   - Ansible 
+   - Relauto
+dir: '/home/ec2-user/autorel'
+branname: release-0.03
+var1: world
+suffix: --amh
+# ............template config ....................
+new_name: RELEASE_NAME

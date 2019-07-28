@@ -1,0 +1,5 @@
+---
+- name: common roles
+  hosts: localhost
+  roles:
+   - release
