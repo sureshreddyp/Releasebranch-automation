@@ -68,8 +68,8 @@
     chdir: '{{ dir }}/{{ item }}'
   with_items:
     - '{{ repolist }}'
-- name: clean dir
-  shell: rm -Rf /home/ec2-user/autorel/*
+#- name: clean dir
+#  shell: rm -Rf /home/ec2-user/autorel/*
 
 
 

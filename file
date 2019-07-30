@@ -1,0 +1,14 @@
+TASK [release : checkout branch] ***************************************************************************************************************************************
+failed: [localhost] (item=demomvn) => {"changed": true, "cmd": ["git", "checkout", "-b", "release-0.003"], "delta": "0:00:00.002717", "end": "2019-07-30 03:12:10.879815", "item": "demomvn", "msg": "non-zero return code", "rc": 128, "start": "2019-07-30 03:12:10.877098", "stderr": "fatal: A branch named 'release-0.003' already exists.", "stderr_lines": ["fatal: A branch named 'release-0.003' already exists."], "stdout": "", "stdout_lines": []}
+failed: [localhost] (item=Ansible) => {"changed": true, "cmd": ["git", "checkout", "-b", "release-0.003"], "delta": "0:00:00.002792", "end": "2019-07-30 03:12:10.993905", "item": "Ansible", "msg": "non-zero return code", "rc": 128, "start": "2019-07-30 03:12:10.991113", "stderr": "fatal: A branch named 'release-0.003' already exists.", "stderr_lines": ["fatal: A branch named 'release-0.003' already exists."], "stdout": "", "stdout_lines": []}
+failed: [localhost] (item=Relauto) => {"changed": true, "cmd": ["git", "checkout", "-b", "release-0.003"], "delta": "0:00:00.002707", "end": "2019-07-30 03:12:11.106457", "item": "Relauto", "msg": "non-zero return code", "rc": 128, "start": "2019-07-30 03:12:11.103750", "stderr": "fatal: A branch named 'release-0.003' already exists.", "stderr_lines": ["fatal: A branch named 'release-0.003' already exists."], "stdout": "", "stdout_lines": []}
+...ignoring
+
+----------------------
+1)the above error branch name already vunte error vastadi. nenu ignore mention chesa. but vallaki custom message kavali anta " branch already exist" ani.
+new branch name mention cheste error radu.and debub message display avakudadu.
+===================
+led: [localhost] (item=nwewwrepo) => {"changed": false, "cmd": "/usr/bin/git clone --origin origin 'https://sureshreddyp:********@github.com/sureshreddyp/nwewwrepo.git' /home/ec2-user/autorel/nwewwrepo", "item": "nwewwrepo", "msg": "Cloning into '/home/ec2-user/autorel/nwewwrepo'...\nremote: Repository not found.\nfatal: repository 'https://sureshreddyp:********@github.com/sureshreddyp/nwewwrepo.git/' not found", "rc": 128, "stderr": "Cloning into '/home/ec2-user/autorel/nwewwrepo'...\nremote: Repository not found.\nfatal: repository 'https://sureshreddyp:suresh123@github.com/sureshreddyp/nwewwrepo.git/' not found\n", "stderr_lines": ["Cloning into '/home/ec2-user/autorel/nwewwrepo'...", "remote: Repository not found.", "fatal: repository 'https://sureshreddyp:suresh123@github.com/sureshreddyp/nwewwrepo.git/' not found"], "stdout": "", "stdout_lines": []}
+
+
+2) repository name list lo lenidi mention cheste error vastavundi vallaki this place lo custom message kavali anta " repository not exist"

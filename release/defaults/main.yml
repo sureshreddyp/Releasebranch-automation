@@ -6,8 +6,9 @@ repolist:
    - demomvn 
    - Ansible 
    - Relauto
+   - nwewwrepo
 dir: '/home/ec2-user/autorel'
-branname: release-0.03
+branname: release-0.003
 var1: world
 suffix: --amh
 # ............template config ....................
