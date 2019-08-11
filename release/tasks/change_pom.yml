@@ -1,7 +1,0 @@
----
-- name: get artifactid in pom file
-  shell: '/home/ec2-user/relauto/release/tasks/change_pom.sh {{ suffix }}'
-  args:
-    chdir: '{{ dir }}/{{ item }}'
-  with_items: 
-      - '{{ repolist }}'
