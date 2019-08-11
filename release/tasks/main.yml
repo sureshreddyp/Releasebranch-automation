@@ -9,14 +9,6 @@
     update: no
   with_items: 
     - '{{ repolist }}'
-#- name: pull to remote
-#  command: 'git pull origin master'
-#  command: 'git pull origin {{ branname }}'
-#  args:
- #  chdir: '{{ dir }}/{{ item }}'
- # with_items:
- #   - '{{ repolist }}'
- # ignore_errors: yes
 - name: checkout branch
   command: 'git checkout -b {{ branname }}'
   args:
@@ -52,24 +44,15 @@
     chdir: '{{ dir }}/{{ item }}'
   with_items:
     - '{{ repolist }}'
-# this is pull remote repo code it's working
-#- name: pull to remote
-#  command: 'git pull origin {{ branname }}'
-#  args: 
-#   chdir: '{{ dir }}/{{ item }}'
-#  with_items:
-#    - '{{ repolist }}'
-#  notify: add
   ignore_errors: yes
-# pull end
 - name: push to remote
   command: 'git push -u origin {{ branname }}'
   args:
     chdir: '{{ dir }}/{{ item }}'
   with_items:
     - '{{ repolist }}'
-#- name: clean dir
-#  shell: rm -Rf /home/ec2-user/autorel/*
+- name: clean dir
+  shell: rm -Rf /home/ec2-user/autorel/*
 
 
 
